@@ -78,3 +78,12 @@ Version 1.0 — Functional prototype deployed successfully on Ubuntu Server usin
 - Export results
 - Authentication and rate limiting
 - Public portfolio demo with restricted diagnostic targets
+## Application Screenshots
+
+### Network Diagnostic Dashboard
+
+![NetAssist Dashboard](docs/screenshots/dashboard.png)
+
+### Traceroute and Diagnostic Results
+
+![NetAssist Traceroute](docs/screenshots/traceroute.png)
