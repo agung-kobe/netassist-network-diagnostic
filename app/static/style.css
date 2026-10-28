@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.diagnostic-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.diagnostic-card h3 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+.diagnostic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+@media (max-width: 600px) {
+    .diagnostic-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.json-details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.json-details summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.json-details pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
+#summary-card {
+    grid-column: 1 / -1;
+}
+
+#traceroute-card {
+    grid-column: 1 / -1;
+}
+
+#traceroute-result {
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.6;
+    white-space: pre;
+}
+
+.port-check-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.port-check-section input {
+    width: 180px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.port-check-section button {
+    margin-left: 8px;
+}
+
+#custom-port-result {
+    margin-bottom: 0;
+    font-weight: 500;
+}
