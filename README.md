@@ -87,3 +87,22 @@ Version 1.0 — Functional prototype deployed successfully on Ubuntu Server usin
 ### Traceroute and Diagnostic Results
 
 ![NetAssist Traceroute](docs/screenshots/traceroute.png)
+## System Architecture
+
+```mermaid
+flowchart TB
+    A["Windows 11 - VS Code"]
+    B["Proxmox VE"]
+    C["Ubuntu Server 24.04 VM"]
+    D["Docker - FastAPI"]
+    E["NetAssist Web Dashboard"]
+    F["Tailscale VPN - Private HTTPS"]
+    G["Remote PC / Smartphone"]
+
+    A -.->|Deployment| C
+    B --> C
+    C --> D
+    D --> E
+    G --> F
+    F --> D
+```
